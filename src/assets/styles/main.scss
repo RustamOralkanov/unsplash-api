@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1480px) {
+  .container {
+    max-width: unset;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .isDesktop {
+    display: none;
+  }
+  .container {
+    padding: 0 20px;
+  }
+
+  .gallery {
+    margin-top: 50px !important;
+
+    &-wrapper {
+      gap: 20px !important;
+    }
+  }
+}
