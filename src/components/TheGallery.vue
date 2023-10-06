@@ -20,6 +20,14 @@ defineProps<Props>()
 </script>
 
 <style lang="scss">
+.gallery {
+    margin-top: 50px;
+
+    &-wrapper {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 992px) {
     .gallery {
         margin-top: 50px;
